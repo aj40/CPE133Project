@@ -1,22 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Engineers: Allison Lee & Alex Johnson
 // 
 // Create Date: 11/18/2020 10:13:24 AM
-// Design Name: 
-// Module Name: counter
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Project Name: Digital Stopwatch
+// Target Devices: Basys3
+// Description: Counter for the start/stop and reset buttons
 //////////////////////////////////////////////////////////////////////////////////
 
 
