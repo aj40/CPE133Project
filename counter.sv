@@ -12,10 +12,11 @@
 module counter(
     input clk,
     input reset,
+    input start_stop,
     output reg d0,d1,d2,d3; 
     );
     
-    reg[23:0] ticker; //24 bits to count to 10million (100Hz)
+    reg[26:0] ticker; //247 bits (100Hz)
     wire click;
     
 endmodule
