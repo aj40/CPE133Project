@@ -17,6 +17,6 @@ module counter(
     );
     
     reg[26:0] ticker; //247 bits (100Hz)
-    wire click;
+    logic click;
     
 endmodule
