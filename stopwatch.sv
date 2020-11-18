@@ -16,6 +16,10 @@ module stopwatch(
     output [3:0]an
     );
     
+    logic [3:0] d0,d1,d2,d3;
+    
+    counter counter_sw(.clk(clk), .start_stop(start_stop), .reset(reset), .d0(d0), .d1(d1), .d2(d2), .d3(d3));
+    
     
     
 endmodule
