@@ -16,7 +16,7 @@ module counter(
     output reg d0,d1,d2,d3; 
     );
     
-    reg[26:0] ticker; //247 bits (100Hz)
+    reg[26:0] ticker; //27 bits (100MHz)
     logic click;
     
     always @ (posedge clock or posedge reset)
