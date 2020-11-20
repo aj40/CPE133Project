@@ -19,7 +19,7 @@ module stopwatch(
     logic [3:0] d0,d1,d2,d3;
     
     counter counter_sw(.clk(clk), .start_stop(start_stop), .reset(reset), .d0(d0), .d1(d1), .d2(d2), .d3(d3));
-    
+    clock_divider clkdiv(.clk(clk), .reset(reset), .d0(d0), .d1(d1), .d2(d2), .d3(d3), .dp(decimal), .sseg(Seg), .an(an));
     univ_sseg sseg(.clk(clk), .valid(1), .sseg(Seg), .disp_en(an));
     
     
