@@ -20,6 +20,8 @@ module stopwatch(
     
     counter counter_sw(.clk(clk), .start_stop(start_stop), .reset(reset), .d0(d0), .d1(d1), .d2(d2), .d3(d3));
     
+    univ_sseg sseg(.clk(clk), .valid(1), .sseg(Seg), .disp_en(an));
+    
     
     
 endmodule
