@@ -70,5 +70,6 @@ begin
    
    else 
     d0 <= d0 + 1;
-  end   
+  end 
+end
 endmodule
