@@ -13,7 +13,7 @@ module counter(
     input clk,
     input reset,
     input start_stop,
-    output reg d0,d1,d2,d3 
+    output reg [3:0] d0,d1,d2,d3 
     );
     
     reg [26:0] ticks; //27 bits (100Hz)
