@@ -27,4 +27,5 @@ module counter(
             else if(start_stop) 
                 ticks <= ticks + 1;
         end
+    assign tick_output = ticks;
 endmodule
