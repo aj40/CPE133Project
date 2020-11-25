@@ -11,16 +11,14 @@ module stopwatch(
     input clk,
     input start_stop,
     input reset,
-    output [7:0] Seg,
-    output decimal,
-    output [3:0]an
+    output [6:0] Seg,
+    output [3:0]an,
+    output dp
     );
+    reg [3:0] t0, t1, t2, t3;
     
-    logic [3:0] d0,d1,d2,d3;
-    
-    counter counter_sw(.clk(clk), .start_stop(start_stop), .reset(reset), .d0(d0), .d1(d1), .d2(d2), .d3(d3));
-    clock_divider clkdiv(.clk(clk), .reset(reset), .d0(d0), .d1(d1), .d2(d2), .d3(d3), .dp(decimal), .sseg(Seg), .an(an));
-    univ_sseg sseg(.clk(clk), .valid(1), .ssegs(Seg), .disp_en(an));
+    counter counter_sw(.clk(clk), .start_stop(start_stop), .reset(reset), .d0(t0), .d1(t1), .d2(t2), .d3(t3));
+    seven_seg seg(.clk(clk), .reset(reset), .d0(t0), .d1(t1), .d2(t2), .d3(t3), .Seg(Seg), .an(an), .dp(dp));
     
     
     
