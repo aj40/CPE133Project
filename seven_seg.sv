@@ -66,7 +66,7 @@ always @ (*)
  end
 assign an = an_temp;
 
-//display
+
 reg [6:0] sseg_temp;
 always @ (*)
   begin
